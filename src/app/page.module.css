@@ -10,13 +10,14 @@
 .page {
   height: 80vh;
   width: 80%;
-  box-shadow:0 0 6rem #444;
+  box-shadow: 0 0 6rem #444;
   padding: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.projects{
+
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -27,9 +28,46 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.projects a:hover{
+.projects a:hover {
   transform: scale(1.5);
   background-color: #444;
   padding: .6rem;
   border-radius: .25rem;
+  cursor: pointer;
+}
+
+.noWallet {
+  padding: .7rem;
+  border: none;
+  color: #4f4;
+  background: black;
+  box-shadow: 0 0 1.5rem #444;
+  font-size: 1.1rem;
+}
+
+.noWallet:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .page {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .projects {
+    height: 80%;
+  }
 }
